@@ -1,6 +1,7 @@
 package com.btrix24.step_definitions;
 
 
+import com.btrix24.utilities.ConfigurationReader;
 import com.btrix24.utilities.Driver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -19,6 +20,7 @@ public class Hook {
         System.out.println("BEFORE");
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     @After

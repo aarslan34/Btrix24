@@ -26,16 +26,6 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on the landing page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "user logs in as a \"help-desk\"",
   "keyword": "Then "
 });
@@ -65,16 +55,6 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is on the landing page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
   "name": "user logs in as a \"marketing\"",
   "keyword": "Then "
 });
@@ -101,16 +81,6 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user is on the landing page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-});
-formatter.result({
   "status": "passed"
 });
 formatter.step({

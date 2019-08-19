@@ -14,10 +14,6 @@ public class LoginStepDefinitions {
 
     Pages pages = new Pages();
 
-    @Given("user is on the landing page")
-    public void user_is_on_the_landing_page() {
-        pages.loginPage().goToLandingPage();
-    }
 
     @Then("user logs in as a {string}")
     public void user_logs_in_as_a(String user) {

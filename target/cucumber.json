@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3081676442,
+              "duration": 3869588495,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 116619278,
+              "duration": 99554523,
               "status": "passed"
             },
             "match": {
@@ -34,19 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 999069230,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user is on the landing page",
-            "match": {
-              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 9092211686,
+              "duration": 8933749124,
               "status": "passed"
             },
             "line": 12,
@@ -76,7 +64,7 @@
         "before": [
           {
             "result": {
-              "duration": 1395585341,
+              "duration": 2288432640,
               "status": "passed"
             },
             "match": {
@@ -91,7 +79,7 @@
         "after": [
           {
             "result": {
-              "duration": 113170934,
+              "duration": 101268067,
               "status": "passed"
             },
             "match": {
@@ -104,19 +92,7 @@
         "steps": [
           {
             "result": {
-              "duration": 952087009,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user is on the landing page",
-            "match": {
-              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3398303289,
+              "duration": 3494480631,
               "status": "passed"
             },
             "line": 17,
@@ -146,7 +122,7 @@
         "before": [
           {
             "result": {
-              "duration": 1334739918,
+              "duration": 2178425861,
               "status": "passed"
             },
             "match": {
@@ -161,7 +137,7 @@
         "after": [
           {
             "result": {
-              "duration": 120063567,
+              "duration": 100265439,
               "status": "passed"
             },
             "match": {
@@ -174,19 +150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 832423030,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user is on the landing page",
-            "match": {
-              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3301841647,
+              "duration": 3404049293,
               "status": "passed"
             },
             "line": 22,
