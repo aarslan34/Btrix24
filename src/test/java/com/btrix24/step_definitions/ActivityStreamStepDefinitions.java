@@ -13,18 +13,22 @@ import cucumber.api.java.en.When;
 public class ActivityStreamStepDefinitions extends BasePage {
 
     ActivityStreamPage activityStreamPage = new ActivityStreamPage();
+    Pages pages = new Pages();
 
-//    @And("user clicks on Task")
-//    public void user_clicks_on_Task() {
-//        BrowserUtils.waitPlease(3);
-//        //activityStreamPage.taskTab.click();
-//        waitUntilLoaderScreenDisappear();
-//    }
 
-    @Then("user fills in the title with {string}  and the body of the message as {string}")
+
+    @When("user clicks on Task")
+    public void user_clicks_on_Task() {
+        BrowserUtils.waitForClickablility(activityStreamPage.taskTab, 5);
+        activityStreamPage.taskTab.click();
+        //waitUntilLoaderScreenDisappear();
+    }
+
+    @And("user fills in the title with {string}  and the body of the message as {string}")
     public void user_fills_in_the_title_with_and_the_body_of_the_message_as(String title, String body) {
+        BrowserUtils.waitForClickablility(activityStreamPage.titleTask, 5);
         activityStreamPage.titleTask.sendKeys("title");
-        activityStreamPage.bodyTask.sendKeys("body");
+        //activityStreamPage.bodyTask.sendKeys("body");
     }
 
 
@@ -33,6 +37,16 @@ public class ActivityStreamStepDefinitions extends BasePage {
 
         activityStreamPage.pickDeadline();
         activityStreamPage.sendKey.click();
+        BrowserUtils.waitPlease(2);
+
+    }
+
+    @Then("user uploads link to new task")
+    public void user_uploads_link_to_new_task() {
+        activityStreamPage.linkButton.click();
+        activityStreamPage.linkUrlBox.sendKeys("http://www.google.com");
+        activityStreamPage.linkSaveButton.click();
+        BrowserUtils.waitPlease(2);
 
     }
 

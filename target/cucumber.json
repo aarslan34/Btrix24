@@ -1,12 +1,12 @@
 [
   {
-    "line": 2,
+    "line": 6,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 3869588495,
+              "duration": 3848397222,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 10,
-        "name": "Login as a helpdeskuser",
+        "name": "Verify that user can create new task by clicking on tasks onactivity stream.",
         "description": "",
-        "id": "login;login-as-a-helpdeskuser",
+        "id": "activity-stream;verify-that-user-can-create-new-task-by-clicking-on-tasks-onactivity-stream.",
         "after": [
           {
             "result": {
-              "duration": 99554523,
+              "duration": 147575775,
               "status": "passed"
             },
             "match": {
@@ -34,126 +34,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8933749124,
+              "duration": 9123347003,
               "status": "passed"
             },
             "line": 12,
-            "name": "user logs in as a \"help-desk\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"help-desk\"",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Btrix24_Login"
-          },
-          {
-            "name": "@helpdeskuser"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2288432640,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Login as a marketinguser",
-        "description": "",
-        "id": "login;login-as-a-marketinguser",
-        "after": [
-          {
-            "result": {
-              "duration": 101268067,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3494480631,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user logs in as a \"marketing\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing\"",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Btrix24_Login"
-          },
-          {
-            "name": "@marketinguser"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2178425861,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Login as a hruser",
-        "description": "",
-        "id": "login;login-as-a-hruser",
-        "after": [
-          {
-            "result": {
-              "duration": 100265439,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3404049293,
-              "status": "passed"
-            },
-            "line": 22,
             "name": "user logs in as a \"hr\"",
             "match": {
               "arguments": [
@@ -164,30 +48,180 @@
               ],
               "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
             },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144024334,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user clicks on Task",
+            "match": {
+              "location": "ActivityStreamStepDefinitions.user_clicks_on_Task()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1571143837,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user fills in the title with \"Sample Title\"  and the body of the message as \"Body of the message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sample Title\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Body of the message\"",
+                  "offset": 76
+                }
+              ],
+              "location": "ActivityStreamStepDefinitions.user_fills_in_the_title_with_and_the_body_of_the_message_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5288522246,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user picks a deadline",
+            "match": {
+              "location": "ActivityStreamStepDefinitions.user_picks_a_deadline()"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Btrix24_Login"
+            "name": "@Btrix24_activity_stream"
           },
           {
-            "name": "@hruser"
+            "name": "@create_task"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2249741556,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify that user can upload a file and image or link or add checklist regarding to new task.",
+        "description": "",
+        "id": "activity-stream;verify-that-user-can-upload-a-file-and-image-or-link-or-add-checklist-regarding-to-new-task.",
+        "after": [
+          {
+            "result": {
+              "duration": 155720747,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3730518408,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user logs in as a \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 117600655,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks on Task",
+            "match": {
+              "location": "ActivityStreamStepDefinitions.user_clicks_on_Task()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1462908250,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user fills in the title with \"Sample Title\"  and the body of the message as \"Body of the message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sample Title\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Body of the message\"",
+                  "offset": 76
+                }
+              ],
+              "location": "ActivityStreamStepDefinitions.user_fills_in_the_title_with_and_the_body_of_the_message_as(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2546151161,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user uploads link to new task",
+            "match": {
+              "location": "ActivityStreamStepDefinitions.user_uploads_link_to_new_task()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Btrix24_activity_stream"
+          },
+          {
+            "name": "@upload_file"
           }
         ]
       }
     ],
-    "name": "Login",
-    "description": "  As user I want to login as a helpdeskuser",
-    "id": "login",
+    "name": "activity_stream",
+    "description": "    As a user I should be able to create a task from activity stream",
+    "id": "activity-stream",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/login/Login.feature",
+    "uri": "src/test/resources/features/activity_stream/Activity_Stream.feature",
     "tags": [
       {
-        "name": "@Btrix24_Login",
+        "name": "@Btrix24_activity_stream",
         "type": "Tag",
         "location": {
-          "line": 1,
+          "line": 5,
           "column": 1
         }
       }
