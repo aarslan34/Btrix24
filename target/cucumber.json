@@ -1,0 +1,232 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3081676442,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login as a helpdeskuser",
+        "description": "",
+        "id": "login;login-as-a-helpdeskuser",
+        "after": [
+          {
+            "result": {
+              "duration": 116619278,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 999069230,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user is on the landing page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9092211686,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user logs in as a \"help-desk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"help-desk\"",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Btrix24_Login"
+          },
+          {
+            "name": "@helpdeskuser"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1395585341,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Login as a marketinguser",
+        "description": "",
+        "id": "login;login-as-a-marketinguser",
+        "after": [
+          {
+            "result": {
+              "duration": 113170934,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 952087009,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on the landing page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3398303289,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user logs in as a \"marketing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marketing\"",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Btrix24_Login"
+          },
+          {
+            "name": "@marketinguser"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1334739918,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Login as a hruser",
+        "description": "",
+        "id": "login;login-as-a-hruser",
+        "after": [
+          {
+            "result": {
+              "duration": 120063567,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 832423030,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is on the landing page",
+            "match": {
+              "location": "LoginStepDefinitions.user_is_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3301841647,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user logs in as a \"hr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hr\"",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Btrix24_Login"
+          },
+          {
+            "name": "@hruser"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As user I want to login as a helpdeskuser",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login/Login.feature",
+    "tags": [
+      {
+        "name": "@Btrix24_Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
