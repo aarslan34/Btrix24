@@ -9,6 +9,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 public class ActivityStreamStepDefinitions extends BasePage {
 
@@ -28,6 +29,8 @@ public class ActivityStreamStepDefinitions extends BasePage {
     public void user_fills_in_the_title_with_and_the_body_of_the_message_as(String title, String body) {
         BrowserUtils.waitForClickablility(activityStreamPage.titleTask, 5);
         activityStreamPage.titleTask.sendKeys("title");
+        activityStreamPage.a();
+        //Assert.assertTrue();
         //activityStreamPage.bodyTask.sendKeys("body");
     }
 
@@ -37,7 +40,7 @@ public class ActivityStreamStepDefinitions extends BasePage {
 
         activityStreamPage.pickDeadline();
         activityStreamPage.sendKey.click();
-        BrowserUtils.waitPlease(2);
+        BrowserUtils.waitPlease(10);
 
     }
 

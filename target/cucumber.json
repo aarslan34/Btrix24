@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3848397222,
+              "duration": 13285476277,
               "status": "passed"
             },
             "match": {
@@ -14,30 +14,19 @@
             }
           }
         ],
-        "line": 10,
-        "name": "Verify that user can create new task by clicking on tasks onactivity stream.",
+        "line": 26,
+        "name": "Verify that user should be able to set up a deadline for new task.",
         "description": "",
-        "id": "activity-stream;verify-that-user-can-create-new-task-by-clicking-on-tasks-onactivity-stream.",
-        "after": [
-          {
-            "result": {
-              "duration": 147575775,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
+        "id": "activity-stream;verify-that-user-should-be-able-to-set-up-a-deadline-for-new-task.",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9123347003,
+              "duration": 16503081386,
               "status": "passed"
             },
-            "line": 12,
+            "line": 28,
             "name": "user logs in as a \"hr\"",
             "match": {
               "arguments": [
@@ -52,10 +41,10 @@
           },
           {
             "result": {
-              "duration": 144024334,
+              "duration": 427176741,
               "status": "passed"
             },
-            "line": 13,
+            "line": 29,
             "name": "user clicks on Task",
             "match": {
               "location": "ActivityStreamStepDefinitions.user_clicks_on_Task()"
@@ -64,10 +53,10 @@
           },
           {
             "result": {
-              "duration": 1571143837,
+              "duration": 9918707081,
               "status": "passed"
             },
-            "line": 14,
+            "line": 30,
             "name": "user fills in the title with \"Sample Title\"  and the body of the message as \"Body of the message\"",
             "match": {
               "arguments": [
@@ -86,10 +75,22 @@
           },
           {
             "result": {
-              "duration": 5288522246,
+              "duration": 4119716125,
               "status": "passed"
             },
-            "line": 15,
+            "line": 31,
+            "name": "user uploads link to new task",
+            "match": {
+              "location": "ActivityStreamStepDefinitions.user_uploads_link_to_new_task()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13711753160,
+              "status": "passed"
+            },
+            "line": 32,
             "name": "user picks a deadline",
             "match": {
               "location": "ActivityStreamStepDefinitions.user_picks_a_deadline()"
@@ -102,111 +103,7 @@
             "name": "@Btrix24_activity_stream"
           },
           {
-            "name": "@create_task"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2249741556,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "Verify that user can upload a file and image or link or add checklist regarding to new task.",
-        "description": "",
-        "id": "activity-stream;verify-that-user-can-upload-a-file-and-image-or-link-or-add-checklist-regarding-to-new-task.",
-        "after": [
-          {
-            "result": {
-              "duration": 155720747,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.teardown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3730518408,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user logs in as a \"hr\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"hr\"",
-                  "offset": 18
-                }
-              ],
-              "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 117600655,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user clicks on Task",
-            "match": {
-              "location": "ActivityStreamStepDefinitions.user_clicks_on_Task()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1462908250,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user fills in the title with \"Sample Title\"  and the body of the message as \"Body of the message\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Sample Title\"",
-                  "offset": 29
-                },
-                {
-                  "val": "\"Body of the message\"",
-                  "offset": 76
-                }
-              ],
-              "location": "ActivityStreamStepDefinitions.user_fills_in_the_title_with_and_the_body_of_the_message_as(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2546151161,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user uploads link to new task",
-            "match": {
-              "location": "ActivityStreamStepDefinitions.user_uploads_link_to_new_task()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Btrix24_activity_stream"
-          },
-          {
-            "name": "@upload_file"
+            "name": "@all"
           }
         ]
       }

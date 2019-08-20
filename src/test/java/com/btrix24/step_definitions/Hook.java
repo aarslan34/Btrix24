@@ -23,17 +23,17 @@ public class Hook {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
-    @After
-    public void teardown(Scenario scenario){
-        if(scenario.isFailed()){
-            TakesScreenshot takesScreenshot = (TakesScreenshot) Driver.getDriver();
-            byte[] image = takesScreenshot.getScreenshotAs(OutputType.BYTES);
-            //will attach screenshot into report
-            scenario.embed(image, "image/png");
-        }
-        Driver.closeDriver();
-        System.out.println("AFTER");
-    }
+//    @After
+//    public void teardown(Scenario scenario){
+//        if(scenario.isFailed()){
+//            TakesScreenshot takesScreenshot = (TakesScreenshot) Driver.getDriver();
+//            byte[] image = takesScreenshot.getScreenshotAs(OutputType.BYTES);
+//            //will attach screenshot into report
+//            scenario.embed(image, "image/png");
+//        }
+//        Driver.closeDriver();
+//        System.out.println("AFTER");
+//    }
 
 
 

@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Verify that user can create new task by clicking on tasks onactivity stream.",
+  "name": "Verify that user should be able to set up a deadline for new task.",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -18,66 +18,7 @@ formatter.scenario({
       "name": "@Btrix24_activity_stream"
     },
     {
-      "name": "@create_task"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user logs in as a \"hr\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "LoginStepDefinitions.user_logs_in_as_a(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user clicks on Task",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "ActivityStreamStepDefinitions.user_clicks_on_Task()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user fills in the title with \"Sample Title\"  and the body of the message as \"Body of the message\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "ActivityStreamStepDefinitions.user_fills_in_the_title_with_and_the_body_of_the_message_as(String,String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user picks a deadline",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ActivityStreamStepDefinitions.user_picks_a_deadline()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Verify that user can upload a file and image or link or add checklist regarding to new task.",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Btrix24_activity_stream"
-    },
-    {
-      "name": "@upload_file"
+      "name": "@all"
     }
   ]
 });
@@ -124,7 +65,14 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.after({
+formatter.step({
+  "name": "user picks a deadline",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ActivityStreamStepDefinitions.user_picks_a_deadline()"
+});
+formatter.result({
   "status": "passed"
 });
 });
